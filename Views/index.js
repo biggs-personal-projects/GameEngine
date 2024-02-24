@@ -40,3 +40,18 @@ ctx.lineTo(20,20);
 ctx.stroke();
 
 /* Draw Rotated Rectangle */
+// Rotates around current canvas origin,
+// which is default (0, 0) or the top left corner
+ctx.rotate((50 * Math.PI) / 180);
+ctx.fillStyle = "yellow";
+ctx.fillRect(100, 0, 80, 20);
+// (Undoing the rotation afterwards to return to normal to avoid lingering rotations for future drawings)
+ctx.rotate(-(50 * Math.PI) / 180);
+
+// Reset everything, including settings
+// Could be what we need to do before drawing the next frame, but still need to test it out.
+// ctx.reset();
+
+// Clear everything displayed, but leaves all the other settings
+// Could be what we want, might be faster? Internet is unclear.
+// context.clearRect(0, 0, canvas.width, canvas.height);
