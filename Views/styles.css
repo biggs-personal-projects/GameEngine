@@ -7,3 +7,9 @@
 .jumbotron { 
     color: black;
 }
+
+.game-canvas {
+    border: red 1px solid;
+    width: 1000px;
+    height: 600px;
+}
