@@ -1,7 +1,7 @@
 console.log('Hello world!');
 
 // Gets the canvas element
-const canvas = document.getElementById("game-frame");
+const canvas = document.getElementById("game-frame") as HTMLCanvasElement;
 
 // Gets the canvas context in 2d
 const ctx = canvas.getContext("2d");
